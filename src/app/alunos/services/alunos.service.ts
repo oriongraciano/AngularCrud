@@ -18,6 +18,7 @@ export class AlunosService {
     const alunos = this.getAlunos();
     alunos.push(aluno);
     localStorage.setItem(this.localStorageKey, JSON.stringify(alunos));
+    window.location.reload();
   }
 
   updateAluno(aluno: Aluno): void {

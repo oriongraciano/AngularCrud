@@ -1,5 +1,119 @@
-h1 {
-    background-color: #2196f3;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins';
+}
+/* Estilos para o contêiner principal */
+/* div {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  } */
+  
+  /* Estilos para o título principal */
+  h1 {
+    background-color: #60b4f8;
+    font-size: 24px;
+    margin-bottom: 20px;
     text-align: center;
+    padding: 10px 0px;
+    border-radius: 5px;
+    font-family: 'Poppins';
+  }
+  
+  /* Estilos para a lista de alunos */
+  h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  /* Estilos para o botão "Excluir" */
+  button {
+    padding: 5px 10px;
+    background-color: #2196f3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Estilos para o formulário de adicionar novo aluno */
+  h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: .75rem;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  select,
+  input[type="date"] {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  
+.alunoItem{
+    border-bottom: 0.5px #ccc solid;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 5px 10px;
 }
 
+  button[type="submit"] {
+    padding: 5px 10px;
+    background-color: #2196f3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover{
+    background-color: #56acf2;
+  }
+
+  .containerAlunos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+    padding: 25px;
+    transition: rotate3d();
+  }
+
+  .divForm, .divLista{
+    width: 450px;
+  }
+
+  .listaAlunos,.alunoItem{
+    width: 100%;
+  }
+
+  @media screen and (max-width: 480px) {
+    .containerAlunos{
+        flex-direction: column;
+    }
+    .divForm, .divLista{
+        width: 100%;
+      }
+  }
