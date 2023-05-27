@@ -9,17 +9,18 @@ h1 {
   font-size: 24px;
   margin-bottom: 20px;
   text-align: center;
-  padding: 10px 0px;
+  padding: 12px 0px;
   border-radius: 5px;
   font-family: 'Poppins';
 }
 
 /* Estilos para a lista de alunos */
 h2 {
-  background-color: #86c4f7;
+  background-color: #90daba;
   border-radius: 5px;
-  font-size: 18px;
-  margin-bottom: 10px;
+  font-size: 20px;
+  margin-bottom: 12px;
+  padding-left: 8px;
 }
 
 ul {
@@ -29,7 +30,7 @@ ul {
 }
 
 li {
-  margin-bottom: 5px;
+  margin-bottom: 6px;
 }
 
 /* Estilos para o botão "Excluir" */
@@ -44,8 +45,11 @@ button {
 
 /* Estilos para o formulário de adicionar novo aluno */
 h3 {
-  font-size: 16px;
+  background-color: rgb(220, 218, 218);
+  font-size: 17px;
   margin-bottom: 10px;
+  border-radius: 2px;
+  padding-left: 8px;
 }
 
 form label {
@@ -83,7 +87,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #56acf2;
+  background-color: #2196f3;
 }
 
 .containerAlunos {
@@ -97,12 +101,12 @@ button[type="submit"]:hover {
 
 .divForm,
 .divLista {
-  width: 450px;
+  width: 460px;
 }
 
 .listaAlunos,
 .alunoItem {
-  width: 100%;
+  width: 105%;
 }
 
 @media screen and (max-width: 480px) {
