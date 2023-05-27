@@ -36,7 +36,7 @@
     <h2>Alunos inscritos:</h2>
     <ul class="listaAlunos">
       <li class="alunoItem" *ngFor="let aluno of alunos">
-        {{ aluno.nome }} - {{ aluno.email }} - [ {{aluno.sexo}} ] -{{aluno.dataNascimento}}
+        {{ aluno.nome }} - {{ aluno.email }} - [ {{aluno.sexo}} ] - {{aluno.dataNascimento}}
         <button (click)="excluirAluno(aluno.email)">Excluir</button>
       </li>
     </ul>
